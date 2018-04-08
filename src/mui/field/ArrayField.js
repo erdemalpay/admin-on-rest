@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import LinearProgress from 'material-ui/LinearProgress';
 import get from 'lodash.get';
 
-import { crudGetManyAccumulate as crudGetManyAccumulateAction } from 'admin-on-rest';
-import { getReferencesByIds } from 'admin-on-rest';
+import { crudGetManyAccumulate as crudGetManyAccumulateAction } from '../../actions/accumulateActions';
+import { getReferencesByIds } from '../../reducer/admin/references/oneToMany';
 
 export class ArrayField extends Component {
     componentDidMount() {
